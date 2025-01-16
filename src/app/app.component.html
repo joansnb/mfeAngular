@@ -1,0 +1,67 @@
+<div class="container">  
+    <header>  
+        <h1>Formula 1 App con Angular</h1>  
+    </header>  
+
+    <main>  
+        <div class="tabs">  
+            <div   
+                class="tab"   
+                [class.active]="activeTab === 'inicio'"   
+                (click)="selectTab('inicio')">Inicio</div>  
+            <div   
+                class="tab"   
+                [class.active]="activeTab === 'historia'"   
+                (click)="selectTab('historia')">Historia</div>  
+            <div   
+                class="tab"   
+                [class.active]="activeTab === 'pilotos'"   
+                (click)="selectTab('pilotos')">Pilotos Famosos</div>  
+        </div>  
+
+        <div *ngIf="activeTab === 'inicio'" class="content">  
+            <section>  
+                <h2>Introducción a la Fórmula 1</h2>  
+                <p>  
+                    La Fórmula 1, también conocida como F1, es la categoría más alta de automovilismo monoplaza.   
+                    Organizada por la Federación Internacional del Automóvil (FIA), es un campeonato mundial que   
+                    reúne a los mejores pilotos y equipos del mundo.  
+                </p>  
+            </section>  
+            <section>  
+                <h2>Eventos y Carreras</h2>  
+                <p>  
+                    La temporada de Fórmula 1 consta de una serie de carreras (GPs) celebradas en diferentes   
+                    circuitos alrededor del mundo. Cada carrera es una combinación de estrategia, velocidad y   
+                    habilidad de conducción.  
+                </p>  
+            </section>  
+        </div>  
+
+        <div *ngIf="activeTab === 'historia'" class="content">  
+            <section>  
+                <h2>Historia de la Fórmula 1</h2>  
+                <p>  
+                    La Fórmula 1 se estableció en 1950 y ha evolucionado significativamente a lo largo de las   
+                    décadas. Con el paso del tiempo, ha visto la introducción de tecnologías avanzadas y un   
+                    enfoque creciente en la seguridad de los pilotos.  
+                </p>  
+            </section>  
+        </div>  
+
+        <div *ngIf="activeTab === 'pilotos'" class="content">  
+            <section>  
+                <h2>Equipos y Pilotos Destacados</h2>  
+                <p>  
+                    Equipos como Mercedes, Ferrari y Red Bull Racing han dominado en los últimos años.   
+                    Pilotos legendarios como Michael Schumacher, Ayrton Senna y Lewis Hamilton han dejado una   
+                    huella imborrable en la historia de la F1.  
+                </p>  
+            </section>  
+        </div>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2025 Angular Remote App. Todos los derechos reservados.</p>  
+    </footer>  
+</div>
