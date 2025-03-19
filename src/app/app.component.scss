@@ -49,6 +49,10 @@ header, footer {
     color: #c00000; /* Color rojo F1 */  
 }  
 
+h2,p{
+    color:#000
+}
+
 footer {  
     font-size: 0.9em;  
     color: #555; /* Color gris para el texto del pie de página */  
@@ -62,4 +66,4 @@ footer a {
 
 footer a:hover {  
     text-decoration: underline; /* Subrayado al pasar el ratón */  
-}  
+} 

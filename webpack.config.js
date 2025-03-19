@@ -20,18 +20,19 @@ module.exports = {
   resolve: {
     alias: {
       ...sharedMappings.getAliases(),
-    }
+    }, 
+    extensions:['.ts', '.js', '.tsx', '.jsx']
   },
   experiments: {
     outputModule: true
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "angularRemoteApp",
+      name: "AngularRemoteApp",
       filename: "remoteEntry.js",
       exposes: {
         "./TestComponent": "./src/app/test/test.component.ts", // component
-        './angularRemoteApp': './src/loadApp.ts', // app
+        './AngularRemoteApp': './src/loadApp.ts', // app
       },
 
       shared: share({
