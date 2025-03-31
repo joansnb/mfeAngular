@@ -19,6 +19,6 @@ import { createCustomElement } from '@angular/elements';
 export class AppModule {
   constructor(private injector: Injector) {
     const element = createCustomElement(AppComponent, { injector: injector });
-    customElements.define('angular-app-component', element);
+    customElements.define('formula-app', element);
   }
 }
