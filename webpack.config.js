@@ -10,7 +10,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "FormulaApp",
+    uniqueName: "formula-app",
     publicPath: "auto",
     scriptType: 'text/javascript'
   },
@@ -29,9 +29,9 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: "FormulaApp",
-      filename: "remoteEntry.js",
+      filename: "remoteEntry1.js",
       exposes: {
-        "./TestComponent": "./src/app/test/test.component.ts", // component
+        // "./TestComponent": "./src/app/test/test.component.ts", // component
         './FormulaApp': './src/loadApp.ts', // app
       },
 
