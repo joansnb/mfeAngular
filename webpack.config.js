@@ -10,7 +10,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "formula-app",
+    uniqueName: "FormulaApp",
     publicPath: "auto",
     scriptType: 'text/javascript'
   },
@@ -20,7 +20,7 @@ module.exports = {
   resolve: {
     alias: {
       ...sharedMappings.getAliases(),
-    }, 
+    },
     extensions:['.ts', '.js', '.tsx', '.jsx']
   },
   experiments: {
